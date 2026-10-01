@@ -1,1 +1,1 @@
-my apps privacy policies .HTML
+# my apps privacy policies .HTML
