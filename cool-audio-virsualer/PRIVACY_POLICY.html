@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - cool audio visualizer</title>
+    <style>
+        :root {
+            --bg-color: #0b0e17;
+            --card-bg: #141824;
+            --text-color: #e2e8f0;
+            --text-muted: #94a3b8;
+            --accent-color: #00e5ff;
+            --border-color: rgba(255, 255, 255, 0.08);
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            margin: 0;
+            padding: 30px 16px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            padding: 36px 32px;
+            border-radius: 16px;
+            border: 1px solid var(--border-color);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+        }
+        h1 {
+            color: #ffffff;
+            font-size: 26px;
+            margin-top: 0;
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 12px;
+        }
+        h2 {
+            color: #ffffff;
+            font-size: 20px;
+            margin-top: 28px;
+            margin-bottom: 12px;
+        }
+        h3 {
+            color: var(--accent-color);
+            font-size: 16px;
+            margin-top: 18px;
+            margin-bottom: 8px;
+        }
+        p, li {
+            color: var(--text-color);
+            font-size: 15px;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .badge {
+            display: inline-block;
+            background: rgba(0, 229, 255, 0.15);
+            color: var(--accent-color);
+            padding: 4px 10px;
+            border-radius: 8px;
+            font-size: 13px;
+            font-weight: 600;
+            margin-bottom: 16px;
+        }
+        .note-box {
+            background: rgba(0, 229, 255, 0.08);
+            border-left: 4px solid var(--accent-color);
+            padding: 14px 18px;
+            border-radius: 0 8px 8px 0;
+            margin: 18px 0;
+        }
+        a {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .footer {
+            margin-top: 36px;
+            padding-top: 18px;
+            border-top: 1px solid var(--border-color);
+            color: var(--text-muted);
+            font-size: 13px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="badge">Official Google Play Compliance</div>
+    <h1>Privacy Policy for cool audio visualizer</h1>
+    <p><strong>Last Updated:</strong> October 12, 2026</p>
+    
+    <p>This Privacy Policy explains how <strong>cool audio visualizer</strong> ("we", "our", or "the application") accesses, processes, and protects your data. We strictly respect your personal privacy and practice complete transparency.</p>
+
+    <div class="note-box">
+        <strong>Core Privacy Guarantee:</strong> cool audio visualizer <u>never</u> records, uploads, stores, or transmits your audio, microphone recordings, voice data, or personal files. All audio frequency calculations are ephemeral and discarded instantly.
+    </div>
+
+    <h2>1. Information We Access and Process</h2>
+    <h3>A. Audio Data (<code>RECORD_AUDIO</code> &amp; <code>AudioPlaybackCapture</code>)</h3>
+    <p>cool audio visualizer accesses audio input strictly to compute real-time Fast Fourier Transform (FFT) frequencies for neon equalizer bars, waves, and circular visualizers.</p>
+    <ul>
+        <li><strong>Ephemeral Processing:</strong> All frequency calculations take place purely in volatile system memory (RAM).</li>
+        <li><strong>Zero Cloud / Zero Recording:</strong> No speech, music, or environmental sounds are ever saved to disk or transmitted over the network. Audio buffers are discarded instantly after each frame is drawn.</li>
+    </ul>
+
+    <h3>B. Device Preferences &amp; Images</h3>
+    <ul>
+        <li>User settings, color palettes, and sensitivity adjustments are saved locally using Android's private SharedPreferences / DataStore.</li>
+        <li>Custom wallpapers and circle avatars chosen from your gallery remain strictly on your local device.</li>
+    </ul>
+
+    <h2>2. Third-Party Services &amp; Advertising</h2>
+    <p>cool audio visualizer integrates <strong>Google AdMob</strong> to serve standard advertisements and rewarded ads (to unlock optional visual effects). Google AdMob may collect device identifiers (AAID), coarse IP location, and ad performance analytics under its own privacy policy: <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">Google Privacy &amp; Terms</a>.</p>
+
+    <h2>3. Android Permissions Breakdown</h2>
+    <ul>
+        <li><strong>RECORD_AUDIO:</strong> Required for the Android Visualizer API to process sound frequency.</li>
+        <li><strong>FOREGROUND_SERVICE:</strong> Keeps the audio capture and floating visualizer running without interruption.</li>
+        <li><strong>SYSTEM_ALERT_WINDOW:</strong> Allows rendering the visualizer overlay on top of other applications.</li>
+        <li><strong>PACKAGE_USAGE_STATS:</strong> Used solely to detect when user-whitelisted music players are launched or closed for the App Filter automation feature. No activity history is saved or uploaded.</li>
+        <li><strong>POST_NOTIFICATIONS:</strong> Displays foreground notifications on Android 13+.</li>
+        <li><strong>INTERNET:</strong> Exclusively used by Google AdMob to load advertisements.</li>
+    </ul>
+
+    <h2>4. Children's Privacy</h2>
+    <p>cool audio visualizer is designed for general audiences and is not directed to children under 13 years of age. We do not knowingly collect personal information from children.</p>
+
+    <h2>5. Contact Information</h2>
+    <p>If you have any questions or feedback regarding this policy, feel free to reach out via your developer support email or our project repository.</p>
+
+    <div class="footer">
+        &copy; 2026 cool audio visualizer. All rights reserved. Built with privacy in mind.
+    </div>
+</div>
+</body>
+</html>
